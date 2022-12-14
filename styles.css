@@ -3,15 +3,16 @@
 }
 
 .body {
-  margin: 0
+  margin: 0;
 }
 
 .header {
   display: flex;
   background-color: #1f2937;
   justify-content: space-between;
-  padding: 1rem 15rem;
+  padding: 1rem 15%;
   align-items: center;
+  gap: 1rem;
 }
 
 .logo {
@@ -31,4 +32,50 @@
 a {
   text-decoration: none;
   color: #e5e7eb;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 15%;
+  background-color: #1f2937;
+  gap: 1rem;
+}
+
+.left-hero, .right-hero {
+  flex: 1 1 300px;
+}
+
+.main-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  margin: 0;
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.left-hero > button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #3882f6;
+  border: none;
+  padding: 8px 36px;
+  border-radius: 10px;
+}
+
+.right-hero > img {
+  max-width: 100%;
+}
+
+.left-hero > button{
+  transition-duration: 0.4s;
+}
+
+.left-hero > button:hover {
+  background-color: #fff;
+  color: #3882f6;
 }
