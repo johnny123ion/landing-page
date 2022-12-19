@@ -116,3 +116,25 @@ a {
 .item > p {
   text-align: center;
 }
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  padding: 4rem 15%;
+}
+
+.quote-section > :nth-child(1) {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+  padding: 0 100px;
+}
+
+.quote-section > :nth-child(2) {
+  font-weight: bold;
+  padding: 0 100px;
+  margin-left: auto;
+  margin-right: 50px;
+}
