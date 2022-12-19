@@ -79,3 +79,40 @@ a {
   background-color: #fff;
   color: #3882f6;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem 15% 4rem 15%;
+  gap: 2rem;
+}
+
+.content-header {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+  margin: 0;
+}
+
+.items-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.item {
+  max-width: 175px;
+}
+
+.square {
+  width: 175px;
+  height: 175px;
+  border: 5px solid #3882f6;
+  border-radius: 10%;
+}
+
+.item > p {
+  text-align: center;
+}
