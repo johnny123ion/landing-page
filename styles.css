@@ -15,7 +15,7 @@
   gap: 1rem;
 }
 
-.logo {
+.logo, .banner-text > :nth-child(1) {
   font-size: 24px;
   color: #f9faf8;
   font-weight: bolder;
@@ -53,7 +53,7 @@ a {
   margin: 0;
 }
 
-.secondary-text {
+.secondary-text, .banner-text > :nth-child(2) {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -65,14 +65,11 @@ a {
   border: none;
   padding: 8px 36px;
   border-radius: 10px;
+  transition-duration: 0.4s;
 }
 
 .right-hero > img {
   max-width: 100%;
-}
-
-.left-hero > button{
-  transition-duration: 0.4s;
 }
 
 .left-hero > button:hover {
@@ -137,4 +134,47 @@ a {
   padding: 0 100px;
   margin-left: auto;
   margin-right: 50px;
+}
+
+.banner {
+  padding: 4rem 15%;
+}
+
+.banner-container {
+  background-color:#3882f6;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 10%;
+  border-radius: 15px;
+}
+
+.banner-container > :nth-child(2) {
+  align-self: center;
+}
+
+.banner-text > p{
+  margin: 6px 0;
+}
+
+.banner-container > button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #3882f6;
+  border: 2px solid #fff;
+  padding: 8px 36px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.banner-container > button:hover {
+  background-color: #fff;
+  color: #3882f6;
+}
+
+.footer {
+  padding: 2rem 15%;
+  background-color: #1f2937;
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 22px;
 }
